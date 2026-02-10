@@ -1,0 +1,13 @@
+.p-dd{
+  padding: 0.2rem 0.5rem;
+}
+.trsspn{
+  transition: 0.8s;
+}
+.active{
+  font-weight: bold;
+}
+.activegr{
+  font-weight: bold;
+  color: #46A358;
+}
