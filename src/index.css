@@ -1,7 +1,7 @@
 @import "tailwindcss";
 body{
   height: 160vh;
-  background: rgb(173, 173, 173);
+  background: white;
   margin: 2% 3.5% 0 3.5%;
   overflow-x: hidden;
 }

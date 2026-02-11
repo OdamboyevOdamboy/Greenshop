@@ -36,7 +36,7 @@ const Heeder = () => {
   }, [location]);
   return (
     <>
-      <div className="sticky top-0 w-full h-[clamp(38px,5.5vmin,53px)] flex justify-between items-start">
+      <div className="sticky top-0 w-full h-[clamp(38px,5.5vmin,53px)] flex justify-between items-start  mb-3 bg-[white] z-2">
         <div className="w-[16%] flex"><img src={flover} alt="" className='w-[clamp(28px,5.5vmin,34.3px)]' /><span className='text-[#46A358] font-bold text-[clamp(18px,2.901vmin,110.03px)]'>GREENSHOP</span></div>
         <div className="w-2/5 h-10 flex justify-around text-[clamp(14px,2.6vmin,20px)]">
           <NavLink to="/home" className={({ isActive, isPending }) => (isActive ? "active trsspn" : isPending ? "trsspn" : "")}>Home</NavLink>
