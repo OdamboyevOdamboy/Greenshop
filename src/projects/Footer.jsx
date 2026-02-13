@@ -37,10 +37,14 @@ const Footer=()=>{
         <div className='text-[14px] leading-5.5 w-51'>We are an online plant shop offering a wide range of cheap and trendy plants.</div>
       </div>
       <div>
-        <div className='text-[18px] font-bold'>Would you like to join newsletters?</div>
-        <div className='w-88.5 h-10'>
-          <input type="text" name="" id="" className='rounded-md h-10 shadow-[0 0 20 0 to-black]' placeholder='enter your email address...'/>
+        <div className='text-[18px] font-bold mt-9.25'>Would you like to join newsletters?</div>
+        <div className='w-88.5 h-10 flex relative mt-4.5'>
+          <input type="text" name="" id="" className='rounded-md h-10 w-88.5 shadow-[0 0 20 0 to-black]' placeholder='enter your email address...'/>
+          <button className='absolute right-0 w-21.25 h-10 bg-[#46A358] rounded-r-md text-[white] font-bold'>Join</button>
         </div>
+        <div className='w-88.5 mt-4.25'>We usually post offers and challenges in newsletter. We’re your 
+          online houseplant destination. We offer a wide range of houseplants and 
+          accessories shipped directly from our (green)house to yours! </div>
       </div>
     </div>
     </>
