@@ -4,26 +4,26 @@ import Home from "../Home"
 import Shop from "../Shop"
 import Plant from "../Plant"
 import Blogs from "../Blogs"
-const rout=createBrowserRouter([
+const rout = createBrowserRouter([
   {
-    path:"/",
-    element:<App/>,
-    children:[
+    path: "/",
+    element: <App />,
+    children: [
       {
-        path:"/home",
-        element:<Home/>
+        index: true,
+        element: <Home />
       },
       {
-        path:"/shop",
-        element:<Shop/>
+        path: "/shop",
+        element: <Shop />
       },
       {
-        path:"/plant",
-        element:<Plant/>
+        path: "/plant",
+        element: <Plant />
       },
       {
-        path:"/blogs",
-        element:<Blogs/>
+        path: "/blogs",
+        element: <Blogs />
       }
     ]
   }

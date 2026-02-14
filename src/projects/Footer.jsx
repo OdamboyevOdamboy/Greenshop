@@ -3,6 +3,9 @@ import cacktop from './Pictures/cacktop.svg'
 import cack1 from './Pictures/cack1.svg'
 import flow1 from './Pictures/flow1.svg'
 import './Heeder.css'
+import flover from './Pictures/flover.svg'
+import local from './Pictures/local.svg'
+import gmail from './Pictures/gmail.svg'
 const Footer=()=>{
   return(
     <>
@@ -41,13 +44,26 @@ const Footer=()=>{
         <div>
           <div className='text-[18px] font-bold mt-9.25'>Would you like to join newsletters?</div>
           <div className='w-88.5 h-10 flex relative mt-4.5 rounded-md shadow1'>
-            <input type="text" name="" id="" className='rounded-md h-10 w-88.5' placeholder='enter your email address...'/>
+            <input type="text" name="" id="" className='rounded-md h-10 w-88.5 pl-2.75' placeholder='enter your email address...'/>
             <button className='absolute right-0 w-21.25 h-10 bg-[#46A358] rounded-r-md text-[white] font-bold'>Join</button>
           </div>
           <div className='w-88.5 mt-4.25 text-[13px]'>We usually post offers and challenges in newsletter. We’re your 
             online houseplant destination. We offer a wide range of houseplants and 
             accessories shipped directly from our (green)house to yours! </div>
         </div>
+      </div>
+    </div>
+    <div className='w-full h-22 bg-[#46A3581A] flex items-center justify-around'>
+      <div>
+        <div className="w-37.5 flex items-center"><img src={flover} alt="" className='size-[34.3px]'/><span className='text-[#46A358] font-bold text-[18.7px]'>GREENSHOP</span></div>
+      </div>
+      <div className='flex w-51.25 justify-between'>
+        <img src={local} alt="" />
+        <div className='w-44 h-11 leading-5.5 text-[14px]'>70 West Buckingham Ave. Farmingdale, NY 11735</div>
+      </div>
+      <div className='flex w-48.75 justify-between items-center'>
+        <img src={gmail} alt="" className='size-5'/>
+        <div className='text-[14px] h-5.5'>contact@greenshop.com</div>
       </div>
     </div>
     </>
