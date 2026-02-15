@@ -24,6 +24,13 @@ const Home=()=>{
         <div className='size-2 bg-[#46A3584D] rounded-[50%]'></div>
       </div>
     </div>
+    <div className='w-full mt-6.5'>
+      <div className='w-77.5 h-193.5 bg-[#FBFBFB] flex justify-center'>
+        <div className='w-67 h-95.75 mt-3.5'>
+          <div className='text-[18px] font-bold'>Categories</div>
+        </div>
+      </div>
+    </div>
     </>
   )
 }

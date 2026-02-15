@@ -38,16 +38,16 @@ const Heeder = () => {
   }, [location]);
   return (
     <>
-      <div className="sticky top-0 w-full h-[clamp(38px,5.5vmin,53px)] flex justify-between items-start  mb-3 bg-[white] z-2">
-        <div className="w-[16%] flex"><img src={flover} alt="" className='w-[clamp(28px,5.5vmin,34.3px)]' /><span className='text-[#46A358] font-bold text-[clamp(18px,2.901vmin,110.03px)]'>GREENSHOP</span></div>
+      <div className="sticky top-0 w-full h-13.25 flex justify-between items-start  mb-3 bg-[white] z-2">
+        <div className="w-[16%] flex items-center"><img src={flover} alt="" className='w-[34.3px]' /><span className='text-[#46A358] font-bold text-[18.6px]'>GREENSHOP</span></div>
         <div className="w-2/5 h-10 flex justify-around text-[clamp(14px,2.6vmin,20px)]">
           <NavLink to="/" className={({ isActive, isPending }) => (isActive ? "active trsspn" : "")}>Home</NavLink>
           <NavLink to="/shop" className={({ isActive }) => (isActive ? "activegr trsspn" : "")}>Shop</NavLink>
           <NavLink to="/plant" className={({ isActive }) => (isActive ? "activegr trsspn" : "")}>Plant Care</NavLink>
           <NavLink to="/blogs" className={({ isActive }) => (isActive ? "activegr trsspn" : "")}>Blogs</NavLink>
         </div>
-        <div className="w-[16%] flex justify-around items-center">
-          <img src={search} alt="" className='w-[clamp(18px,5.5vmin,20px)] h-[clamp(18px,5.5vmin,20px)]' /><img src={magazine} alt="" className='w-[clamp(18px,5.5vmin,24px)] h-[clamp(18px,5.5vmin,24px)]' /><button className='flex bg-green-600 rounded-md text-white p-dd items-center'><img src={logout} alt="" className='w-[clamp(18px,5.5vmin,20px)] h-[clamp(18px,5.5vmin,20px)]' />Login</button>
+        <div className="w-[16%] flex justify-between items-center">
+          <img src={search} alt="" className='size-5' /><img src={magazine} alt="" className='size-6' /><button className='flex bg-green-600 rounded-md text-white p-dd items-center'><img src={logout} alt="" className='size-5' />Login</button>
         </div>
         <div className='absolute bottom-0 w-full h-px bg-[#46A35880]'>
           <span className='absolute bottom-0 h-1 bg-green-600 span-r transition-[0.8s]'></span>

@@ -6,6 +6,13 @@ import './Heeder.css'
 import flover from './Pictures/flover.svg'
 import local from './Pictures/local.svg'
 import gmail from './Pictures/gmail.svg'
+import phone from './Pictures/phone.svg'
+import fasebook from './Pictures/fasebook.svg'
+import instagram from './Pictures/instagram.svg'
+import twitter from './Pictures/twitter.svg'
+import linkedin from './Pictures/linkedin.svg'
+import union from './Pictures/union.svg'
+import cards from './Pictures/cards.svg'
 const Footer=()=>{
   return(
     <>
@@ -53,7 +60,7 @@ const Footer=()=>{
         </div>
       </div>
     </div>
-    <div className='w-full h-22 bg-[#46A3581A] flex items-center justify-around'>
+    <div className='w-full h-22 bg-[#46A3581A] flex items-center justify-around pr-66.75'>
       <div>
         <div className="w-37.5 flex items-center"><img src={flover} alt="" className='size-[34.3px]'/><span className='text-[#46A358] font-bold text-[18.7px]'>GREENSHOP</span></div>
       </div>
@@ -61,10 +68,71 @@ const Footer=()=>{
         <img src={local} alt="" />
         <div className='w-44 h-11 leading-5.5 text-[14px]'>70 West Buckingham Ave. Farmingdale, NY 11735</div>
       </div>
-      <div className='flex w-48.75 justify-between items-center'>
+      <div className='flex w-[184.78px] justify-between items-center'>
         <img src={gmail} alt="" className='size-5'/>
         <div className='text-[14px] h-5.5'>contact@greenshop.com</div>
       </div>
+      <div className='flex w-[147.2px] justify-between items-center'>
+        <img src={phone} alt="" className='size-5'/>
+        <div className='text-[14px] h-5.5'>+88 01911 717 490</div>
+      </div>
+    </div>
+    <div className='w-full h-59 bg-[#FBFBFB] flex justify-around items-center'>
+      <div>
+        <div className='text-[18px] font-bold'>My Account</div>
+        <div className='leading-7.5 text-[14px]'>
+          <div>My Account</div>
+          <div>Our stores</div>
+          <div>Contact us</div>
+          <div>Career</div>
+          <div>Specials</div>
+        </div>
+      </div>
+      <div>
+        <div className='text-[18px] font-bold'>Help & Guide</div>
+        <div className='leading-7.5 text-[14px]'>
+          <div>Help Center</div>
+          <div>How to Buy</div>
+          <div>Shipping & Delivery</div>
+          <div>Product Policy</div>
+          <div>How to Return</div>
+        </div>
+      </div>
+      <div>
+        <div className='text-[18px] font-bold'>Categories</div>
+        <div className='leading-7.5 text-[14px]'>  
+          <div>House Plants</div>
+          <div>Potter Plants</div>
+          <div>Seeds</div>
+          <div>Small Plants</div>
+          <div>Accessories</div>
+        </div>
+      </div>
+      <div className='pr-38.75'>
+        <div className='text-[18px] font-bold'>Social Media</div>
+        <div className='text-[14px] flex justify-between w-47.5 mt-5'> 
+          <div className='size-7.5 rounded-sm border border-[#46A35833] flex justify-center items-center'>
+            <img src={fasebook} alt="" />
+          </div>
+          <div className='size-7.5 rounded-sm border border-[#46A35833] flex justify-center items-center'>
+            <img src={instagram} alt="" />
+          </div>
+          <div className='size-7.5 rounded-sm border border-[#46A35833] flex justify-center items-center'>
+            <img src={twitter} alt="" />
+          </div>
+          <div className='size-7.5 rounded-sm border border-[#46A35833] flex justify-center items-center'>
+            <img src={linkedin} alt="" />
+          </div>
+          <div className='size-7.5 rounded-sm border border-[#46A35833] flex justify-center items-center'>
+            <img src={union} alt="" />
+          </div>
+        </div>
+        <div className='text-[18px] font-bold mt-8.25'>We accept</div>
+        <div className='mt-3.25'><img src={cards} alt="" /></div>
+      </div>
+    </div>
+    <div className='w-full flex justify-center mt-1.75'>
+      <div className='text-[14px]'>© 2021 GreenShop. All Rights Reserved.</div>
     </div>
     </>
   )
