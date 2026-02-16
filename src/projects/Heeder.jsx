@@ -50,7 +50,7 @@ const Heeder = () => {
           <img src={search} alt="" className='size-5' /><img src={magazine} alt="" className='size-6' /><button className='flex bg-green-600 rounded-md text-white p-dd items-center'><img src={logout} alt="" className='size-5' />Login</button>
         </div>
         <div className='absolute bottom-0 w-full h-px bg-[#46A35880]'>
-          <span className='absolute bottom-0 h-1 bg-green-600 span-r transition-[0.8s]'></span>
+          <span className='absolute bottom-0 h-1 bg-green-600 transition-[0.8s]'></span>
         </div>
       </div>
     </>

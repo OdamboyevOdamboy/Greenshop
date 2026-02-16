@@ -17,3 +17,13 @@
 .shadow1{
   box-shadow: 0 0 20px 0 #0000000F;
 }
+.lineargr{
+  background: linear-gradient(180deg,#46A3581A,#46A35808);
+}
+.lineargr1{
+  background: linear-gradient(135deg,#46A3581A,#46A35808);
+}
+.lineargr2{
+  border: 2px solid transparent;
+  background: linear-gradient(white,white) padding-box,linear-gradient(135deg,#46a35950,#46A35800) border-box;
+}

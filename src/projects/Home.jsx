@@ -1,5 +1,7 @@
 import './Heeder.css'
 import bigflow from './Pictures/bigflower.svg'
+import flow2 from './Pictures/flow2.svg'
+import flow3 from './Pictures/flow3.svg'
 const Home=()=>{
   return(
     <>
@@ -24,62 +26,94 @@ const Home=()=>{
         <div className='size-2 bg-[#46A3584D] rounded-[50%]'></div>
       </div>
     </div>
-    <div className='w-full mt-6.5'>
-      <div className='w-77.5 h-193.5 bg-[#FBFBFB] flex justify-center'>
-        <div className='w-67 h-95.75 mt-3.5'>
-          <div className='text-[18px] font-bold'>Categories</div>
-          <div className='w-64 flex justify-between pl-7.5'>
-            <div className='w-22.75 h-90 leading-10 text-[15px] text-[#3D3D3D]'>
-              <div className='text-[#46A358] font-semibold'>House Plants</div>
-              <div>Potter Plants</div>
-              <div>Seeds</div>
-              <div>Small Plants</div>
-              <div>Big Plants</div>
-              <div>Succulents</div>
-              <div>Trerrariums</div>
-              <div>Gardening</div>
-              <div>Accessories</div>
+    <div className='w-full mt-6.5 flex justify-between'>
+      <div className='w-77.5 h-311'>
+        <div className='w-full h-193.5 bg-[#FBFBFB] flex justify-center'>
+          <div className='w-67 h-95.75 mt-3.5'>
+            <div className='text-[18px] font-bold'>Categories</div>
+            <div className='w-64 flex justify-between pl-2.5'>
+              <div className='w-22.75 h-90 leading-10 text-[15px] text-[#3D3D3D]'>
+                <div className='text-[#46A358] font-semibold'>House Plants</div>
+                <div>Potter Plants</div>
+                <div>Seeds</div>
+                <div>Small Plants</div>
+                <div>Big Plants</div>
+                <div>Succulents</div>
+                <div>Trerrariums</div>
+                <div>Gardening</div>
+                <div>Accessories</div>
+              </div>
+              <div className='w-7 h-90 leading-10'>
+                <div className='text-[#46A358] font-semibold'>(33)</div>
+                <div>(12)</div>
+                <div>(65)</div>
+                <div>(39)</div>
+                <div>(23)</div>
+                <div>(17)</div>
+                <div>(19)</div>
+                <div>(13)</div>
+                <div>(18)</div>
+              </div>
             </div>
-            <div className='w-7 h-90 leading-10'>
-              <div className='text-[#46A358] font-semibold'>(33)</div>
-              <div>(12)</div>
-              <div>(65)</div>
-              <div>(39)</div>
-              <div>(23)</div>
-              <div>(17)</div>
-              <div>(19)</div>
-              <div>(13)</div>
-              <div>(18)</div>
+            <div className='w-56.5 h-33.25 mt-9'>
+              <div className='font-bold text-[18px]'>Price Range</div>
+              <div className='flex ml-2 mt-5'>
+                <div className='w-38.75 h-1 bg-[#46A358] flex items-center relative'>
+                  <div className='size-5 bg-[#46A358] rounded-[50%] border-[3px] border-[white] absolute -left-0.5'></div>
+                </div>
+                <div className='w-16 h-1 bg-[#46A35833] flex items-center relative'>
+                  <div className='size-5 bg-[#46A358] rounded-[50%] border-[3px] border-[white] absolute -left-0.5'></div>
+                </div>
+              </div>
+              <div className='text-[#3D3D3D] w-31.25 h-4 flex items-center justify-between mt-5.25 text-[16px]'>Price: 
+                <span className='font-semibold text-[#46A358]'>$39 - $1230</span>
+              </div>
+              <button className='bg-[#46A358] text-[white] text-[16px] font-semibold w-22.5 h-8.75 rounded-md mt-4'>Filter</button>
+            </div>
+            <div className='w-67 h-35.75 mt-11.5'>
+              <div className='text-[18px] font-bold'>Size</div>
+              <div className='w-64 flex justify-between pl-2.5'>
+                <div className='leading-10 text-[15px] text-[#3D3D3D]'>
+                  <div>Small</div>
+                  <div>Medium</div>
+                  <div>Large</div>
+                </div>
+                <div className='w-7.5 h-30 leading-10 text-[15px] text-[#3D3D3D]'>
+                  <div>(119)</div>
+                  <div>(86)</div>
+                  <div>(78)</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className='w-56.5 h-33.25 mt-9'>
-            <div className='font-bold text-[18px]'>Price Range</div>
-            <div className='flex ml-2 mt-5'>
-              <div className='w-38.75 h-1 bg-[#46A358] flex items-center relative'>
-                <div className='size-5 bg-[#46A358] rounded-[50%] border-[3px] border-[white] absolute -left-0.5'></div>
-              </div>
-              <div className='w-16 h-1 bg-[#46A35833] flex items-center relative'>
-                <div className='size-5 bg-[#46A358] rounded-[50%] border-[3px] border-[white] absolute -left-0.5'></div>
-              </div>
+        </div>
+        <div className='w-full h-117.5 lineargr relative'>
+          <div className='w-full flex justify-around'><img src={flow2} alt="" /></div>
+          <div className='w-full flex justify-around text-[23px] font-bold mt-2'>UP TO 75% OFF</div>
+          <div className='size-3.75 rounded-[29px] lineargr1 top-29 left-9.5 absolute'></div>
+          <div className='size-5.5 lineargr2 rounded-[7px] left-4 absolute top-74.75'></div>
+          <div className='size-11.25 rounded-[29px] lineargr1 top-85.75 right-4.25 absolute'></div>
+          <div className='h-92.5 relative flex justify-around items-center'>
+            <div className='size-92.5 absolute -top-6.75'>
+              <img src={flow3} alt="" className='mix-blend-multiply size-92.5'/>
             </div>
-            <div className='text-[#3D3D3D] w-31.25 h-4 flex items-center justify-between mt-5.25 text-[16px]'>Price: 
-              <span className='font-semibold text-[#46A358]'>$39 - $1230</span>
-            </div>
-            <button className='bg-[#46A358] text-[white] text-[16px] font-semibold w-22.5 h-8.75 rounded-md mt-4'>Filter</button>
           </div>
-          <div className='w-67 h-35.75 mt-11.5 ml-7.5'>
-            <div className='text-[18px] font-bold'>Size</div>
-            <div className='w-64 flex justify-between'>
-              <div className='leading-10 text-[15px] text-[#3D3D3D]'>
-                <div>Small</div>
-                <div>Medium</div>
-                <div>Large</div>
-              </div>
-              <div className='w-7.5 h-30 leading-10 text-[15px] text-[#3D3D3D]'>
-                <div>(119)</div>
-                <div>(86)</div>
-                <div>(78)</div>
-              </div>
+        </div>
+      </div>
+      <div className='w-210 h-297.5'>
+        <div className='w-full h-5.75 flex justify-between'>
+          <div className='w-64.5 flex justify-between relative'>
+            <div className='text-[15px] text-[#46A358] font-bold'>All Plants</div>
+            <div className='text-[15px] text-[#3D3D3D]'>New Arrivals</div>
+            <div className='text-[15px] text-[#3D3D3D]'>Sale</div>
+            <div className='absolute bottom-0 h-0.5 bg-green-600 span-r transition-[0.8s] w-[66.28px]'></div>
+          </div>
+          <div className='flex'>
+            <div className='text-[15px] text-[#3D3D3D]'>Short by:</div>
+            <div className=''>
+              <select name="" id="">
+                <option value="">Default sorting</option>
+              </select>
             </div>
           </div>
         </div>
