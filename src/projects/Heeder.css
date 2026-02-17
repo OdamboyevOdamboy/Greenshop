@@ -27,3 +27,24 @@
   border: 2px solid transparent;
   background: linear-gradient(white,white) padding-box,linear-gradient(135deg,#46a35950,#46A35800) border-box;
 }
+.bsd{
+  transition: 2s;
+  box-shadow: 0 0 10px rgb(255, 252, 252)
+}
+.std{
+  transition: 0.8s;
+  width: 0;
+}
+.bsd:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 10px rgb(218, 211, 211)
+}
+.bsd:hover .std{
+  width: 100%;
+}
+.sgd{
+  display: none;
+}
+.bsd:hover .sgd{
+  display: flex;
+}

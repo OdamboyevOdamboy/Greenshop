@@ -16,7 +16,7 @@ import cards from './Pictures/cards.svg'
 const Footer=()=>{
   return(
     <>
-    <div className="w-full h-62.5 bg-[#FBFBFB] flex items-center justify-center">
+    <div className="w-full h-62.5 bg-[#FBFBFB] flex items-center justify-center mt-25">
       <div className='w-6xl h-50.25 flex items-center'>
         <div className='w-65 pt-11.5 pl-5.75'>
           <div className="bg-[#46A35821] size-18.5 rounded-[50%] relative">
