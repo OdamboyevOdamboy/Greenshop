@@ -2,6 +2,40 @@ import './Heeder.css'
 import bigflow from './Pictures/bigflower.svg'
 import flow2 from './Pictures/flow2.svg'
 import flow3 from './Pictures/flow3.svg'
+import flo1 from './Pictures/flo1.svg'
+import magazine1 from './Pictures/magazine1.svg'
+import heart from './Pictures/heart.svg'
+import search from './Pictures/search.svg'
+import flo2 from './Pictures/flo2.svg'
+import flo3 from './Pictures/flo3.svg'
+const Flocards=({img,text,text1,text2})=>{
+  return(
+    <>
+    <div className='w-64.5'>
+      <div className='w-full h-75 flex items-center justify-center relative bg-[#FBFBFB]'>
+        <div className='w-full h-px bg-[#46A358] absolute top-0'></div>
+        <img src={img} alt="" className='mix-blend-multiply'/>
+        <div className='w-31.25 h-8.75 absolute bottom-1.75 flex justify-between'>
+          <div className='size-8.75 rounded-sm flex items-center justify-center bg-white'>
+            <img src={magazine1} alt="" className=''/>
+          </div>
+          <div className='size-8.75 rounded-sm flex items-center justify-center bg-white'>
+            <img src={heart} alt="" />
+          </div>
+          <div className='size-8.75 rounded-sm flex items-center justify-center bg-white'>
+            <img src={search} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className='text-[16px] text-[#3D3D3D] mt-3 font-semibold'>{text}</div>
+      <div className='w-full flex'>
+        <div className='text-[16px] text-[#46A358] font-bold'>{text1}</div>
+        <div>{text2}</div>
+      </div>
+    </div>
+    </>
+  )
+}
 const Home=()=>{
   return(
     <>
@@ -115,6 +149,13 @@ const Home=()=>{
                 <option value="">Default sorting</option>
               </select>
             </div>
+          </div>
+        </div>
+        <div className='w-full mt-7.75'>
+          <div className='w-full flex justify-between'>
+            <Flocards img={flo1} text={"Barberton Daisy"} text1={"$119.00"}/>
+            <Flocards img={flo2} text={"Angel Wing Begonia"} text1={"$169.00"}/>
+            <Flocards img={flo3} text={"African Violet"} text1={"$199.00"} text2={"$229.00"}/>
           </div>
         </div>
       </div>
