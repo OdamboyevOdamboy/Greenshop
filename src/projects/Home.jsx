@@ -3,15 +3,125 @@ import bigflow from './Pictures/bigflower.svg'
 import flow2 from './Pictures/flow2.svg'
 import flow3 from './Pictures/flow3.svg'
 import flo1 from './Pictures/flo1.svg'
-import magazine1 from './Pictures/magazine1.svg'
-import heart from './Pictures/heart.svg'
 import search from './Pictures/search.svg'
 import flo2 from './Pictures/flo2.svg'
 import flo3 from './Pictures/flo3.svg'
 import flo4 from './Pictures/flo4.svg'
 import flo5 from './Pictures/flo5.svg'
 import flo6 from './Pictures/flo6.svg'
+import flo7 from './Pictures/flo7.svg'
+import flo8 from './Pictures/flo8.svg'
+import flo9 from './Pictures/flo9.svg'
 import { FaCartShopping, FaHeart } from 'react-icons/fa6'
+import React from 'react';
+// Swiper React komponentlari va modullari
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+
+// Swiper stillari
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// Slaydlar uchun ma'lumotlar (Buni xohlagancha o'zgartirishingiz mumkin)
+const slidesData = [
+  {
+    id: 1,
+    welcome: "Welcome to Greenshop",
+    title: "LET'S MAKE A ",
+    titleGreen: "BETTER PLANET",
+    desc: "We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!",
+    img: bigflow // Birinchi rasm linki
+  },
+  {
+    id: 2,
+    welcome: "New Season Collection",
+    title: "UPGRADE YOUR ",
+    titleGreen: "LIVING SPACE",
+    desc: "Discover our new arrivals of indoor plants that bring life and fresh air to your home office or living room. Starting from $12!",
+    img: bigflow // Ikkinchi rasm linki
+  }
+];
+
+const Hero = () => {
+  return (
+    <div className="hero-section" style={{ background: '#fbfbfb', padding: '40px 0' }}>
+      <Swiper
+        modules={[Pagination, Autoplay]}
+        pagination={{ 
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className}" style="background-color: #46A358;"></span>`;
+          }
+        }}
+        autoplay={{ 
+          delay: 4000, // Har 4 sekundda o'zgaradi
+          disableOnInteraction: false 
+        }}
+        loop={true}
+        className="mySwiper"
+        style={{ height: '450px' }}
+      >
+        {slidesData.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              justifyContent: 'space-between', 
+              padding: '0 8%',
+              height: '100%'
+            }}>
+              {/* Matn qismi */}
+              <div style={{ maxWidth: '550px', textAlign: 'left' }}>
+                <p style={{ textTransform: 'uppercase', fontSize: '14px', fontWeight: '500', color: '#3D3D3D' }}>
+                  {slide.welcome}
+                </p>
+                <h1 style={{ fontSize: '65px', fontWeight: '900', margin: '10px 0', lineHeight: '1.2', color: '#3D3D3D' }}>
+                  {slide.title} <span style={{ color: '#46A358' }}>{slide.titleGreen}</span>
+                </h1>
+                <p style={{ color: '#727272', fontSize: '14px', lineHeight: '24px', marginBottom: '35px' }}>
+                  {slide.desc}
+                </p>
+                <button style={{ 
+                  backgroundColor: '#46A358', 
+                  color: 'white', 
+                  border: 'none', 
+                  padding: '12px 28px', 
+                  borderRadius: '6px', 
+                  fontWeight: '700',
+                  cursor: 'pointer',
+                  fontSize: '16px'
+                }}>
+                  SHOP NOW
+                </button>
+              </div>
+
+              {/* Rasm qismi */}
+              <div style={{ position: 'relative', display: 'flex', alignItems: 'flex-end' }}>
+                <img src={slide.img} alt="Plant" className='relative' />
+                <img src={slide.img} alt="Plant" className='absolute size-33.75 bottom-7  left-11' />
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      {/* Pagination (dumaloqlar) uchun qo'shimcha CSS */}
+      <style>{`
+        .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          opacity: 0.3;
+        }
+        .swiper-pagination-bullet-active {
+          opacity: 1 !important;
+        }
+        .swiper-pagination {
+          bottom: 20px !important;
+        }
+      `}</style>
+    </div>
+  );
+};
 const Flocards = ({ img, text, text1, text2 }) => {
   return (
     <>
@@ -43,27 +153,7 @@ const Flocards = ({ img, text, text1, text2 }) => {
 const Home = () => {
   return (
     <>
-      <div className="w-full h-112.5 bg-[#F5F5F580] flex relative justify-center">
-        <div className="w-1/2 flex flex-col p-flex">
-          <span className="text-[14px] text-[#3D3D3D]">WELCOME TO GREENSHOP</span>
-          <span className="text-[70px] font-bold leading-17.5 mt-1.75">LET’S MAKE A BETTER <span className="text-[#46A358]">PLANET</span></span>
-          <span className="text-[16px] text-[#727272] mt-1.25">We are an online plant shop offering a
-            wide range of cheap and trendy plants.
-            Use our plants to create an unique Urban Jungle. Order your favorite plants!</span>
-          <button className="bg-[#46A358] w-35 h-10 text-[white] rounded-md mt-11 text-[16px]">SHOP NOW</button>
-        </div>
-        <div className='w-1/2'>
-          <div className='relative -right-27 -top-12'>
-            <img src={bigflow} alt="" />
-            <img src={bigflow} alt="" className='w-33.75 absolute bottom-8.75 ml-13.75' />
-          </div>
-        </div>
-        <div className='absolute bottom-4.25 w-10 h-2 flex justify-around'>
-          <div className='size-2 bg-[#46A3584D] rounded-[50%]'></div>
-          <div className='size-2 bg-[#46A358] rounded-[50%]'></div>
-          <div className='size-2 bg-[#46A3584D] rounded-[50%]'></div>
-        </div>
-      </div>
+      <Hero/>
       <div className='w-full mt-6.5 flex justify-between'>
         <div className='w-77.5 h-311'>
           <div className='w-full h-193.5 bg-[#FBFBFB] flex justify-center'>
@@ -167,9 +257,9 @@ const Home = () => {
               <Flocards img={flo6} text={"Aluminum Plant"} text1={"$179.00"} text2={""} />
             </div>
             <div className='w-full flex justify-between mt-17.5'>
-              <Flocards img={flo4} text={"Beach Spider Lily"} text1={"$129.00"} />
-              <Flocards img={flo5} text={"Blushing Bromeliad"} text1={"$139.00"} />
-              <Flocards img={flo6} text={"Aluminum Plant"} text1={"$179.00"} text2={""} />
+              <Flocards img={flo7} text={"Beach Spider Lily"} text1={"$129.00"} />
+              <Flocards img={flo8} text={"Blushing Bromeliad"} text1={"$139.00"} />
+              <Flocards img={flo9} text={"Aluminum Plant"} text1={"$179.00"} text2={""} />
             </div>
           </div>
         </div>
